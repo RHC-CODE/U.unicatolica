@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "horoscopoCMV": "/horoscopoCMVsrc/index.html",
+      "src": "horoscopoMCV/src/index.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "horoscopoCMV": "/(.*)",
-      "dest": "/horoscopoCMV/src/index.html"
+      "src": "/(.*)",
+      "dest": "/horoscopoMCV/src/index.html"
     }
   ]
 }
