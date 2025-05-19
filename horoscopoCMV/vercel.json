@@ -6,10 +6,10 @@
       "use": "@vercel/static"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/horoscopoCMV/src/index.html"
+      "horoscopoCMV": "/(.*)",
+      "dest": "/horoscopoCMV/src/index.html"
     }
   ]
 }
