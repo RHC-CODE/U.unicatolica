@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "builds": [{ "horoscopoCM": "/horoscopoCM/src/index.html", "use": "@vercel/static" }],
+  "builds": [{ "horoscopoCMV": "/horoscopoCMV/src/index.html", "use": "@vercel/static" }],
   "rewrites": [{ "source": "/(.*)", "destination": "/horoscopoCMV/src/index.html" }]
 }
