@@ -1,5 +1,15 @@
 {
   "version": 2,
-  "builds": [{ "horoscopoCMV": "/horoscopoCMV/src/index.html", "use": "@vercel/static" }],
-  "rewrites": [{ "source": "/(.*)", "destination": "/horoscopoCMV/src/index.html" }]
+  "builds": [
+    {
+      "src": "src/index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/src/index.html"
+    }
+  ]
 }
