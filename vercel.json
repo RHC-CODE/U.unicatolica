@@ -1,11 +1,20 @@
 {
   "version": 2,
-  "public": "src",
-  "builds": [],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
   "routes": [
     {
+      "src": "/public/(.*)",
+      "dest": "/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/app/$1",
+      "continue": true
     }
   ]
 }
