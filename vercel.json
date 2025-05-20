@@ -2,32 +2,31 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/index.html",
+      "src": "horoscopoCMV/src/index.html",
       "use": "@vercel/static"
     },
     {
-      "src": "src/assets/**/*",
+      "src": "horoscopoCMV/src/assets/**/*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/assets/(.*)",
-      "dest": "/src/assets/$1",
-      "headers": {
-        "Content-Type": "text/css"
-      }
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/src/assets/$1",
+      "dest": "/horoscopoCMV/src/assets/$1",
       "headers": {
         "Content-Type": "application/javascript"
       }
     },
     {
       "src": "/(.*)",
-      "dest": "/src/index.html"
+      "dest": "/horoscopoCMV/src/index.html"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/horoscopoCMV/src/index.html"
     }
   ]
 }
