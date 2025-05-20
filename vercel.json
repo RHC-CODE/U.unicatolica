@@ -4,7 +4,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "/horoscopoCMV/src/index.html",
+      "src": "/src/index.html",
       "use": "@vercel/static"
     }
   ],
@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/horoscopoCMV/src/index.html"
+      "dest": "/src/index.html"
     }
   ]
 }
