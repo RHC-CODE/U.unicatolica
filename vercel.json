@@ -6,7 +6,7 @@
       "use": "@vercel/static"
     },
     {
-      "src": "horoscopoCMV/src/assets/**/*",
+      "src": "horoscopoCMV/src/**/*",
       "use": "@vercel/static"
     }
   ],
