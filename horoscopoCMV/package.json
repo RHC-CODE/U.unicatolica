@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@vercel/speed-insights": "^1.2.0"
+    "@vercel/speed-insights": "^1.2.0",
+    "u.unicatolica": "file:"
   }
 }
