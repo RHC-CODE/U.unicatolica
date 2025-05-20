@@ -13,20 +13,11 @@
   "routes": [
     {
       "src": "/assets/(.*)",
-      "dest": "/horoscopoCMV/src/assets/$1",
-      "headers": {
-        "Content-Type": "application/javascript"
-      }
+      "dest": "/horoscopoCMV/src/assets/$1"
     },
     {
       "src": "/(.*)",
       "dest": "/horoscopoCMV/src/index.html"
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/horoscopoCMV/src/index.html"
     }
   ]
 }
