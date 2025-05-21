@@ -2,22 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/index.html",
+      "src": "horoscopoCMV/src/index.html",
       "use": "@vercel/static"
     },
     {
-      "src": "src/assets/**/*",
+      "src": "horoscopoCMV/src/assets/**/*",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/css/(.*)",
-      "dest": "/src/css/$1"
+      "src": "/assets/(.*)",
+      "dest": "/horoscopoCMV/src/assets/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/src/index.html"
+      "dest": "/horoscopoCMV/src/index.html"
     }
   ]
 }
