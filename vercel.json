@@ -6,11 +6,7 @@
       "use": "@vercel/static"
     },
     {
-      "src": "horoscopoCMV/src/assets/(.*)",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "horoscopoCMV/src/css/(.*)",
+      "src": "horoscopoCMV/src/assets/**/*",
       "use": "@vercel/static"
     }
   ],
@@ -18,10 +14,6 @@
     {
       "src": "/assets/(.*)",
       "dest": "/horoscopoCMV/src/assets/$1"
-    },
-    {
-      "src": "/css/(.*)",
-      "dest": "/horoscopoCMV/src/css/$1"
     },
     {
       "src": "/(.*)",
